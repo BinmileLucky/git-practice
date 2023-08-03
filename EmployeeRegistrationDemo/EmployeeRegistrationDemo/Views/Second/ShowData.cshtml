@@ -1,0 +1,52 @@
+﻿
+@model IEnumerable<EmployeeRegistrationDemo.Models.Employee>
+
+@Html.ActionLink("Create One", "Index","Second",null,new { @class = "btn btn-primary" })
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Department)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th></th>
+    </tr>
+
+         @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit","Second", new { id = item.ID},new { @class= "btn btn-primary"}) |
+
+                @Html.ActionLink("Delete", "Delete","Second", new { id = item.ID }, new { onclick = "return confirm('Are sure wants to delete?');"})
+            </td>
+
+        </tr>
+    }
+
+</table>

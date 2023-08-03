@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeRegistrationDemo", "EmployeeRegistrationDemo\EmployeeRegistrationDemo.csproj", "{30006C0F-61BC-42D4-BC9C-6D113C1A3004}"
+	ProjectSection(ProjectDependencies) = postProject
+		{178EFA04-766C-4549-87C1-1F645572BFB6} = {178EFA04-766C-4549-87C1-1F645572BFB6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectingDB", "ConnectingDB\ConnectingDB.csproj", "{178EFA04-766C-4549-87C1-1F645572BFB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30006C0F-61BC-42D4-BC9C-6D113C1A3004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30006C0F-61BC-42D4-BC9C-6D113C1A3004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30006C0F-61BC-42D4-BC9C-6D113C1A3004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30006C0F-61BC-42D4-BC9C-6D113C1A3004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{178EFA04-766C-4549-87C1-1F645572BFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{178EFA04-766C-4549-87C1-1F645572BFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{178EFA04-766C-4549-87C1-1F645572BFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{178EFA04-766C-4549-87C1-1F645572BFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C8440FB-3A90-4314-AB4D-B45701835B71}
+	EndGlobalSection
+EndGlobal

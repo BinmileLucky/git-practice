@@ -1,0 +1,6 @@
+D:\Practice\EmployeeRegistrationDemo\ConnectingDB\bin\Debug\ConnectingDB.dll
+D:\Practice\EmployeeRegistrationDemo\ConnectingDB\bin\Debug\ConnectingDB.pdb
+D:\Practice\EmployeeRegistrationDemo\ConnectingDB\obj\Debug\ConnectingDB.csproj.AssemblyReference.cache
+D:\Practice\EmployeeRegistrationDemo\ConnectingDB\obj\Debug\ConnectingDB.csproj.CoreCompileInputs.cache
+D:\Practice\EmployeeRegistrationDemo\ConnectingDB\obj\Debug\ConnectingDB.dll
+D:\Practice\EmployeeRegistrationDemo\ConnectingDB\obj\Debug\ConnectingDB.pdb
