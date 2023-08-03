@@ -1,0 +1,15 @@
+D:\Practice\LINQ_demo\LINQ_demo\bin\Debug\net6.0\LINQ_demo.exe
+D:\Practice\LINQ_demo\LINQ_demo\bin\Debug\net6.0\LINQ_demo.deps.json
+D:\Practice\LINQ_demo\LINQ_demo\bin\Debug\net6.0\LINQ_demo.runtimeconfig.json
+D:\Practice\LINQ_demo\LINQ_demo\bin\Debug\net6.0\LINQ_demo.dll
+D:\Practice\LINQ_demo\LINQ_demo\bin\Debug\net6.0\LINQ_demo.pdb
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\LINQ_demo.csproj.AssemblyReference.cache
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\LINQ_demo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\LINQ_demo.AssemblyInfoInputs.cache
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\LINQ_demo.AssemblyInfo.cs
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\LINQ_demo.csproj.CoreCompileInputs.cache
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\LINQ_demo.dll
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\refint\LINQ_demo.dll
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\LINQ_demo.pdb
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\LINQ_demo.genruntimeconfig.cache
+D:\Practice\LINQ_demo\LINQ_demo\obj\Debug\net6.0\ref\LINQ_demo.dll
