@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<nav>
+    <ul>
+        <li>@Html.ActionLink("Indexz","Index")</li>
+        <li>@Html.ActionLink("About us","AboutUs")</li>
+        <li>@Html.ActionLink("Contact us","ContactUs")</li>
+    </ul>
+</nav>
+
+
+
+@{
+    Html.BeginForm("Index", "Second");
+}
+
+@Html.Label("Username") &nbsp; @Html.TextBox("Username")
+<br/>
+<br/>
+@Html.Label("Password") &nbsp; @Html.Password("pass")
+<br />
+<br />
+@Html.Label("Male") &nbsp; @Html.RadioButton("Gender","Male")
+@Html.Label("Female") &nbsp; @Html.RadioButton("Gender","Female")
+<br/>
+<br/>
+
+@Html.Label("Select Country") &nbsp; @Html.DropDownList("Country List",new SelectList(new[] {
+    "India","Pakistan","Afghanistan","Nepal"
+}),"Select one")
+
+
+@{
+    Html.EndForm();
+
+}
+
+
+<h2> Index page</h2>

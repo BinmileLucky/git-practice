@@ -1,0 +1,15 @@
+D:\Practice\13july\13july\bin\Debug\net6.0\13july.exe
+D:\Practice\13july\13july\bin\Debug\net6.0\13july.deps.json
+D:\Practice\13july\13july\bin\Debug\net6.0\13july.runtimeconfig.json
+D:\Practice\13july\13july\bin\Debug\net6.0\13july.dll
+D:\Practice\13july\13july\bin\Debug\net6.0\13july.pdb
+D:\Practice\13july\13july\obj\Debug\net6.0\13july.csproj.AssemblyReference.cache
+D:\Practice\13july\13july\obj\Debug\net6.0\13july.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practice\13july\13july\obj\Debug\net6.0\13july.AssemblyInfoInputs.cache
+D:\Practice\13july\13july\obj\Debug\net6.0\13july.AssemblyInfo.cs
+D:\Practice\13july\13july\obj\Debug\net6.0\13july.csproj.CoreCompileInputs.cache
+D:\Practice\13july\13july\obj\Debug\net6.0\13july.dll
+D:\Practice\13july\13july\obj\Debug\net6.0\refint\13july.dll
+D:\Practice\13july\13july\obj\Debug\net6.0\13july.pdb
+D:\Practice\13july\13july\obj\Debug\net6.0\13july.genruntimeconfig.cache
+D:\Practice\13july\13july\obj\Debug\net6.0\ref\13july.dll
