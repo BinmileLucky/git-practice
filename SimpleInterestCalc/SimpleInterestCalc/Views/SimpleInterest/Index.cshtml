@@ -1,0 +1,53 @@
+﻿@model SimpleInterestCalc.Models.SIModel
+
+
+<form action="/SimpleInterest/Index" method="post">
+	<label asp-for="PrincipalAmount">Principal Amount : </label><br />
+	<input type="number" asp-for="PrincipalAmount" min="1" max="10000000" required /><br />
+	<label asp-for="SimpleInterestRate">Rate :</label><br />
+	<input type="number" asp-for="SimpleInterestRate" min="0" max="10000000" required /><br />
+	<label asp-for="Time">Time Duration :</label><br />
+	<input type="number" asp-for="Time" min="0" max="10000000" required /><br />
+	<input type="submit" value="Calculate" />
+</form> 
+
+<br />
+<br />
+<br />
+
+@{
+	Double pr = Model.PrincipalAmount;
+	Double rt = Model.SimpleInterestRate;
+	Double t = Model.Time;
+	Double total = (pr * rt * t) / 100;
+}
+
+
+@if (total != 0)
+{
+	<h1>Result</h1>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">PrincipalAmount</th>
+				<th scope="col">Rate</th>
+				<th scope="col">Time</th>
+				<th scope="col">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>@Model.PrincipalAmount</td>
+				<td>@Model.SimpleInterestRate</td>
+				<td>@Model.Time</td>
+				<td>@total</td>
+			</tr>
+
+		</tbody>
+	</table>
+}
+
+

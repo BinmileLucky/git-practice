@@ -1,0 +1,50 @@
+﻿@model IEnumerable<RegistrationFormDetails.Models.EmployeeDetail>
+
+<h1>DataDisplay</h1>
+
+<p>
+    <a asp-action="Index">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Department
+            </th>
+            <th>
+                EmpPhone
+            </th>
+            <th>
+                Address
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.EmpName
+                </td>
+                <td>
+                    @item.EmpDepartment
+                </td>
+                <td>
+                    @item.EmpPhone
+                </td>
+                <td>
+                    @item.Address
+                </td>
+                <td>
+                    <a href="/Form/Edit?id=@item.Id">Edit</a> |
+
+                    <a href="/Form/Delete?id=@item.Id" onclick="alert('Are sure wants to delete?');">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

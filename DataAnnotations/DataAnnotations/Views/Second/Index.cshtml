@@ -1,0 +1,28 @@
+﻿@model DataAnnotations.Models.Employee
+
+@using(Html.BeginForm()) {
+
+	<p>@Html.LabelFor(model=>model.Name) &nbsp; @Html.TextBoxFor(model=>model.Name)
+	@Html.ValidationMessageFor(model=>model.Name , "", new {@class="text-danger"})
+	</p>
+	<p>@Html.LabelFor(model=>model.Age) &nbsp; @Html.TextBoxFor(model=>model.Age)
+		@Html.ValidationMessageFor(model=>model.Age, "", new {@class="text-danger"})
+	</p>
+	<p>@Html.LabelFor(model=>model.Gender) &nbsp; @Html.DropDownListFor(model=>model.Gender,new SelectList (new[] {"Male","Female"}),"Select one")
+		@Html.ValidationMessageFor(model=>model.Gender, "", new {@class="text-danger"})
+	</p>
+	<p>@Html.LabelFor(model=>model.Email) &nbsp; @Html.TextBoxFor(model=>model.Email)
+		@Html.ValidationMessageFor(model=>model.Email, "", new {@class="text-danger"})
+	</p>
+	<p>
+		@Html.LabelFor(model=>model.ConfirmEmail) &nbsp; @Html.TextBoxFor(model=>model.ConfirmEmail)
+		@Html.ValidationMessageFor(model=>model.ConfirmEmail, "", new {@class="text-danger"})
+	</p>
+
+	<p>
+		@Html.LabelFor(model=>model.joiningDate) &nbsp; @Html.EditorFor(model=>model.joiningDate)
+		@Html.ValidationMessageFor(model=>model.joiningDate, "", new {@class="text-danger"})
+	</p>
+	<input type="submit" value="submit" class ="btn-btn-info"/>
+	@Html.Raw(ViewData["Message"])
+}

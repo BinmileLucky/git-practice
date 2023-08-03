@@ -1,0 +1,145 @@
+﻿@model RegistrationFormDetails.Models.EmployeeDetail
+
+
+
+
+<h4>EmployeeDetail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form id="formId" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                EmpName :
+                 <input asp-for="EmpName" id="EmpName" class="form-control" required />
+                <span asp-validation-for="EmpName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                EmpDepartment : 
+                <select name="EmpDepartment" id="EmpDepartment" class="form-control">
+                    <option value="Developer">Developer</option>
+                    <option value="Tester">Tester</option>
+                    <option value="HR">HR</option>
+                    <option value="PeoplesFunction">PeoplesFunction</option>
+                </select>
+
+
+
+                <span asp-validation-for="EmpDepartment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                EmpPhone : 
+                <input asp-for="EmpPhone" id="EmpPhone" class="form-control" required />
+                <span asp-validation-for="EmpPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Address : 
+                <input type="text-area" asp-for="Address" id="Address" class="form-control" required />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" onclick="submitStudent()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div>
+    <button type="button" class="btn btn-primary" onclick="displaydata()">Display</button>
+</div>
+
+
+<div class="row">
+    <table id="registrationData">
+    <thead>
+        <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">Phone no</th>
+                <th scope="col">Address</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+            <tr id="trregistration">
+               
+            </tr>
+    </tbody>
+</table>
+
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+
+
+
+
+<script type="text/javascript" >
+        function submitStudent() {
+        var data = $("#formId").serialize();
+           
+            //alert(data);
+            $.ajax({
+                type: 'POST',
+                  url: '/Form/AddEmployeeData',
+                              data: data,
+                success: function (result) {
+                    alert('Successfully received Data ');
+                  displaydata();
+                },
+                error: function () {
+                    alert('Failed to receive the Data');
+                    console.log('Failed ');
+                }
+            })
+        }
+
+        function displaydata() {
+       
+        $.ajax({
+            url: "/Form/DataDisplay",
+            method: "GET",
+            dataType: "json", 
+            success: function (response) {
+                
+               var data=response;
+               //console.log(data);
+               
+               if(data!=null)
+               {
+                  
+                    $.each(data, function (i, v) {
+
+                        //$(registrationData).append("<tr><td>" + v.empName + "</td><td>" + v.empDepartment + "</td><td>" + v.empPhone + "</td><td>" + v.address "</td><td>" + ``  "</td></tr>");
+                        //$(registrationData).append("<tr><td>" + v.empName + "</td><td>" + v.empDepartment + "</td><td>" + v.empPhone + "</td><td>" + v.address + "</td><td><a href=\"/Form/Edit?id=" + v.id + "\">Edit</a></td></tr>");
+                        //$(registrationData).append("<tr><td>" + v.empName + "</td><td>" + v.empDepartment + "</td><td>" + v.empPhone + "</td><td>" + v.address + "</td><td><button type=\"button\" class=\"edit-button\" data-id=\"" + v.id + "\">Edit</button><button type=\"button\" class=\"delete-button\" data-id=\"" + v.id + "\">Delete</button></td></tr>");
+                        $(registrationData).append("<tr><td>" + v.empName + "</td><td>" + v.empDepartment + "</td><td>" + v.empPhone + "</td><td>" + v.address + "</td><td><a href=\"/Form/Edit?id=" + v.id + "\">Edit</a> <a href=\"/Form/Delete?id=" + v.id + "\" onclick=\"return confirm('Are you sure you want to delete?');\">Delete</a></td></tr>");
+
+               
+                     });
+                  
+               }
+               else{
+                   alert('No record found');
+               }
+
+               //var data=''
+
+
+            },
+            error: function (xhr, status, error) {
+                
+                console.error("Error:", error);
+            }
+            });
+    
+        }
+
+</script>
+
+  

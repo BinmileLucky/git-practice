@@ -1,0 +1,15 @@
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\FibonacciSeries.csproj.AssemblyReference.cache
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\FibonacciSeries.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\FibonacciSeries.AssemblyInfoInputs.cache
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\FibonacciSeries.AssemblyInfo.cs
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\FibonacciSeries.csproj.CoreCompileInputs.cache
+D:\Practice\FibonacciSeries\FibonacciSeries\bin\Debug\net6.0\FibonacciSeries.exe
+D:\Practice\FibonacciSeries\FibonacciSeries\bin\Debug\net6.0\FibonacciSeries.deps.json
+D:\Practice\FibonacciSeries\FibonacciSeries\bin\Debug\net6.0\FibonacciSeries.runtimeconfig.json
+D:\Practice\FibonacciSeries\FibonacciSeries\bin\Debug\net6.0\FibonacciSeries.dll
+D:\Practice\FibonacciSeries\FibonacciSeries\bin\Debug\net6.0\FibonacciSeries.pdb
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\FibonacciSeries.dll
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\refint\FibonacciSeries.dll
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\FibonacciSeries.pdb
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\FibonacciSeries.genruntimeconfig.cache
+D:\Practice\FibonacciSeries\FibonacciSeries\obj\Debug\net6.0\ref\FibonacciSeries.dll

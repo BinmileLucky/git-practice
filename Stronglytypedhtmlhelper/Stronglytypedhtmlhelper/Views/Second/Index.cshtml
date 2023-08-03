@@ -1,0 +1,13 @@
+﻿
+@model Stronglytypedhtmlhelper.Models.Signup
+
+@using(Html.BeginForm()) {
+	<p>@Html.LabelFor(model=>model.UserName) &nbsp; @Html.TextBoxFor(model=>model.UserName) </p>
+	<p>@Html.LabelFor(model=>model.UserPassword) &nbsp; @Html.PasswordFor(model=>model.UserPassword) </p>
+	<p>@Html.LabelFor(model=>model.UserGender) &nbsp; @Html.DropDownListFor(model=>model.UserGender,new SelectList(new[] {"Male","Female"},"Select Gender")) </p>
+	<p>@Html.LabelFor(model=>model.UserEmail) &nbsp; @Html.EditorFor(model=>model.UserEmail) </p>
+	<p>@Html.LabelFor(model=>model.UserComment) &nbsp; @Html.TextAreaFor(model=>model.UserComment) </p>
+
+	<input type="submit" value="Submit" />
+
+}
