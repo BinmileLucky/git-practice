@@ -1,0 +1,116 @@
+﻿@model IEnumerable<CrudwithSearch.Models.EmployeeDetail>
+
+
+
+@{
+    ViewData["Title"] = "GetData";
+}
+
+
+
+<h1>GetData</h1>
+
+
+@using (Html.BeginForm("SearchData", "Details", FormMethod.Post))
+{  
+        <p>Name: @Html.TextBox("name")<br />  
+        <input type="submit" value="Search" />     
+        </p>       
+}
+<p>
+    <a asp-action="Index">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpDepartment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpDepartment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@{
+    int totalPages = ViewBag.TotalPages;
+}
+@*<div class="row">
+    <div class="col-md-12">
+        @{
+            for (int i = 1; i <= totalPages; i++)
+            {
+                <ul class="pager">
+                    <li>
+                        @Html.ActionLink(i.ToString(),"GetData", new {PageNumber = i})
+                    </li>
+                </ul>
+            }
+        }
+    
+    </div>
+</div>
+*@
+@*<nav aria-label="Page navigation example">
+    <ul class="pagination">
+
+        @{
+            for (int i = 1; i <= totalPages; i++)
+            {
+          
+                <li class="page-item">
+                        @Html.ActionLink(i.ToString(),"GetData", new {PageNumber = i})
+                    </li>
+               
+            }
+        }
+    </ul>
+  
+</nav>*@
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+
+        @{
+            for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item">
+                    @Html.ActionLink(i.ToString(), "GetData", new { PageNumber = i }, new { @class = "page-link" })
+                </li>
+            }
+        }
+    </ul>
+</nav>
+
+
+
